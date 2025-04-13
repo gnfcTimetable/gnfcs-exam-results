@@ -1,0 +1,37 @@
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? dist
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? No
+? File dist/index.html already exists. Overwrite? No
+i  Skipping write of dist/index.html
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+
++  Firebase initialization complete!
+PS K:\resultapp> npm run build
+✓ 84 modules transformed.
+dist/index.html                  0.39 kB │ gzip:   0.27 kB
+dist/assets/index-ZckZpye1.js  556.40 kB │ gzip: 155.63 kB
+> vite build
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 8.58s
++  hosting[examresult-3a22c]: file upload complete
+i  hosting[examresult-3a22c]: finalizing version...
++  hosting[examresult-3a22c]: version finalized
+i  hosting[examresult-3a22c]: releasing new version...
++  hosting[examresult-3a22c]: release complete
+i  deploying hosting
++  Deploy complete!lt-3a22c]: beginning deploy...
+i  hosting[examresult-3a22c]: found 3 files in dist
+Project Console: https://console.firebase.google.com/project/examresult-3a22c/overview
+Hosting URL: https://examresult-3a22c.web.app
+PS K:\resultapp>
